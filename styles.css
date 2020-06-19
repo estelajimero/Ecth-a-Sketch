@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/**** HEADER ****/
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 30px;
+    background: #c0fcee;
+}
+
+.header-title {
+    font-size: 3em;
+    margin-left: 30px;
+    font-family: 'Bungee Shade', cursive;
+}
+
+.about {
+    font-size: 1em;
+    align-self: flex-end;
+    position: absolute;
+    left: 35px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.tooltip-menu {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.tooltip-menu:hover {
+    background: black;
+    color: white;
+    transition: 0.5s ease-out;
+}
+
+.tooltip-text {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .toggle .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: -190%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .toggle .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+  }
+  
+  .toggle:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.item-link {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.item-link:hover {
+    background: black;
+    color: white;
+    transition: 0.5s ease-out;
+}
+
+/**** MAIN CONTAINER ****/
+
+.main-container {
+    margin: 0;
+    padding: 0;
+}
+
+.sketch-options {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.item-li {
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.item-li:hover {
+    background: grey;
+    color: white;
+    cursor: pointer;
+}
+
+
+/**** GRID SKETCH ****/
+
+#grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(16, 30px);
+    grid-template-rows: repeat(16, 30px);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.grid-item {
+    border: 1px solid grey;
+}
